@@ -1,14 +1,19 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1:clean') {
+        stage('Stage 1) {
             steps {
-                sh "mvn clean"
+                echo "stage1"
             }
         }
         stage('Stage 2:test') {
             steps {
-                sh "mvn test"
+                echo "stage2"
+            }    
+        }
+        stage('Stage 2:test') {
+            steps {
+                echo "stage2"
             }    
         }
     
