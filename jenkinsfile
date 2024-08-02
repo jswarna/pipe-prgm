@@ -3,13 +3,12 @@ pipeline {
     stages {
         stage('Stage 1:clean') {
             steps {
-               
-                echo "Hello world!" 
+                sh "mvn clean"
             }
         }
         stage('Stage 2:test') {
             steps {
-                echo "Hello!" 
+                sh "mvn test"
             }    
         }
     
